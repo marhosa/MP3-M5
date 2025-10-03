@@ -521,8 +521,8 @@ void textMessage() {
 
     // Devs
     drawText(0.15f, -0.5f, "                   MADE BY");
-    drawText(0.0f, -0.58f, "Game Assets Developer - Luis Anton Gonzales");
-    drawText(0.0f, -0.64f, "Game Engine Developer - Matthew Rhomar Santos");
+    drawText(-0.04f, -0.58f, "Game Assets and Optimization - Luis Anton Gonzales");
+    drawText(-0.04f, -0.64f, "Game Engine Developer - Matthew Rhomar Santos");
 
 
     if (playedOnce) { // only show these if game is played at least once
@@ -644,7 +644,7 @@ void update(int value) {
     }
 
     glutPostRedisplay();
-    glutTimerFunc(16, update, 0); // loop every ~16ms (60 FPS)
+    glutTimerFunc(16, update, 0); // loop every 16ms (60 FPS)
 }
 
 
