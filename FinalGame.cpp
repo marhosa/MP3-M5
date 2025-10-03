@@ -672,11 +672,14 @@ void keyboard(unsigned char key, int x, int y) {
         exit(0);
     }
     if (key == 32) { // Space bar to start game
-        startGame = true;
-        //reset current Player Score at losing
-        currentPlayerScore = 0;
-        //game is played once if spacebar is pressed
-        playedOnce = true;
+        if (!startGame) {
+            startGame = true;
+            //reset current Player Score at losing
+            currentPlayerScore = 0;
+            //game is played once if spacebar is pressed
+            playedOnce = true;
+            obstacle_x = obstacleStartingPosition;
+        }
     }
 }
 
