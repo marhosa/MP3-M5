@@ -3,9 +3,6 @@
 void display() {
     glClear(GL_COLOR_BUFFER_BIT);
 
-
-
-
     //Land
     glColor3f(0.0f, 0.5f, 1.0f);
 
@@ -389,3 +386,4 @@ int main(int argc, char** argv) {
     glutMainLoop();
     return 0;
 }
+
